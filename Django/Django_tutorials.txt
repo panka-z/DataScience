@@ -1,0 +1,55 @@
+Django framework setting up
+
+-- creates your project file 
+django-admin startproject website
+
+-- cd to your project directory that has manage.py file 
+cd website
+
+-- create an app inside your project directory
+python manage.py startapp music
+
+-- run the website
+python manage.py runserver
+
+-- run makemigrations to get rid of the warnings
+python manage.py migrate
+
+ModuleNotFoundError: No module named 'musicdjango'
+since comma was missing at the end of the line in INSTALLED_APPS
+
+-- to make the migrations 
+python manage.py makemigrations music
+
+-- to see the migrations applied 
+python manage.py sqlmigrate music 0001
+
+-- open django shell to interact with database in django
+python manage.py shell
+
+-- import the models 
+from music.models import Album,Song
+
+a=Album(artist="Taylor Swift",album_title="Red",genre="Country")
+a.save()
+
+-- access elements of the object Album 
+a.artist 
+Album.objects.all()[0].artist
+
+Album.objects.filter(id=1)
+Album.objects.filter(artist__startswith='Taylor')
+
+
+-- python admin console
+python manage.py createsuperuser
+
+Username (leave blank to use 'user'): admin
+Email address: pankajs579@gmail.com
+Password:Zaqxswcd
+
+-- making changes to models file of music app use command below 
+python manage.py makemigrations music
+python manage.py migrate
+
+
