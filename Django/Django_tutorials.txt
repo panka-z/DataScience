@@ -1,5 +1,8 @@
 Django framework setting up
 
+-- create superuser for django
+python manage.py createsuperuser
+
 -- creates your project file 
 django-admin startproject website
 
