@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/cssm/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="assets/cssm/mediumish.css" rel="stylesheet">
+    <style>
+      .share {
+        text-align: center;
+        margin-top: 10px !important;
+        margin-left: 40px;
+        border: none;
+        width: 200px;
+        border-radius: 10px;
+      }
+
+      .list-group-item:last-child {
+        padding: 0 !important;
+        border: 0px solid gainsboro !important;
+      }
+
+      .float {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        bottom: 111px !important;
+        left: 17px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+      }
+
+      .style_prevu_kit {
+        display: inline-block;
+        /*border:0;*/
+        /*width:196px;*/
+        /*height:210px;*/
+        position: relative;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+      }
+
+      .style_prevu_kit:hover {
+        box-shadow: 0px 0px 10px #000000;
+        z-index: 500;
+        -webkit-transition: all 50ms ease-in;
+        -webkit-transform: scale(0.1);
+        -ms-transition: all 50ms ease-in;
+        -ms-transform: scale(0.1);
+        -moz-transition: all 50ms ease-in;
+        -moz-transform: scale(0.1);
+        transition: all 50ms ease-in;
+        transform: scale(1.0009);
+      }
+      .style_prevu_kit2 {
+        display: inline-block;
+        border:0;
+        width:255px;
+        height:300px;
+        margin:6px;
+        position: relative;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+      }
+
+      .style_prevu_kit2:hover {
+        box-shadow: 0px 0px 10px #000000;
+        z-index: 500;
+        -webkit-transition: all 50ms ease-in;
+        -webkit-transform: scale(0.1);
+        -ms-transition: all 50ms ease-in;
+        -ms-transform: scale(0.1);
+        -moz-transition: all 50ms ease-in;
+        -moz-transform: scale(0.1);
+        transition: all 50ms ease-in;
+        transform: scale(1.0009);
+      }
+      
+      .enrollbtn{
+          position:relative !important;
+          
+      }
+      .enrollbtn:hover {
+    background-color: #0163b3 !important;
+    color: white;
+    border-radius: 0.25em;
+    color: white;
+    border-radius: 0.25em;
+      }
+
+    </style>
+    <script defer>
+      $(function() {
+        var topOfOthDiv = $(".hideshare").offset().top;
+        $(window).scroll(function() {
+          if ($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+            $(".share").hide(); //reached the desired point -- show div
+          } else {
+            $(".share").show();
+          }
+        });
+      });
+
+    </script>
+    <style>
+    @media screen and (min-width: 768px)
+    .container .jumbotron, .container-fluid .jumbotron {
+    padding-right: 50px;
+    padding-left: 50px;
+    
+    }
+    
+      .image-props img {
+        filter: contrast(1.8) brightness(1.5) grayscale(1);
+      }
+
+      .image-props figure:before {
+        z-index: 3;
+        mix-blend-mode: overlay;
+        box-shadow: 0 0 200px black inset;
+      }
+
+      .image-propsnlp img {
+        filter: contrast(1.8) brightness(1.5) grayscale(0.4);
+      }
+
+      .image-propsnlp figure:before {
+        z-index: 3;
+        mix-blend-mode: overlay;
+        box-shadow: 0 0 200px black inset;
+      }
+
+      .move-left {
+        position: absolute;
+        left: -220%;
+      }
+      
+      button{
+          padding-top:2px !important;
+          padding-bottom:2px !important;
+      }
+    
+    .btn, .label, .label-primary, .enrollbtn{
+        padding-top:-2px !important;
+        padding-bottom:-2px !important;
+    }
+    </style>
+  </head>
+
+  <body>
+    <!-- Begin Article
+================================================== -->
+    <div class="container hidden-xs hidden-sm">
+      <div class="row">
+        <img class="img-responsive" style="margin:0px; max-width:120%;min-width:100%;" height="60px" src="https://yt3.ggpht.com/MVb4FIpLMFN3HJ7RpIzIZK3IN9wLPjdZDYc8f-Q1smrBxFHKZAvSUTXA28aT5Palwslgkc9bzA=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" />
+        <!-- Begin Fixed Left Share -->
+        <div class="col-md-2 col-xs-12">
+          <div class="share">
+            <p>
+              <b>
+                <strong style="text-decoration:underline;margin-left:9px;font-size:26px;">Queries ?</strong>
+              </b>
+              <br>
+              mail us
+              <br><button type="button" class="btn" onclick="window.open('https://mail.google.com/mail/u/0/?view=cm&fs=1&to=rocky@suvenconsultants.com&su=Query%20about%20elearning%20course&tf=1')" href=""  target="_blank">here</button></p>
+            <p><span style="text-decoration:underline;">OR</span><br>For Technical guidance Chat with<br>Rocky Sir<br>
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+              <a href="https://api.whatsapp.com/send?phone=919892544177&text=Hello%20Sir%21%20I%20need%20some%20technical%20guidance" class="float" target="_blank">
+                <i class="fa fa-whatsapp my-float"></i>
+              </a>
+              &nbsp; 9892544177</p>
+          </div>
+        </div>
+        <!-- End Fixed Left Share -->
+        <!-- Begin Fixed RIght Share -->
+        <div class="col-md-3 col-xs-12 meright" style="float:right;position:absolute;">
+          <h3 class="text-success text-center shiftme"><span style="font-weight:bolder;">Data Science</span><br> team at <span style="font-weight:bolder;">Suven</span></h3>
+          <div class="">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                  <span class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <img src="https://datascience.suvenconsultants.com/images/testimonials/1per.jpg" class="img-circle fiximg" alt="" width=80 height=80 style="margin-rignt:-5px;">
+                  </span>
+                  <div class="row">
+                    <span class="text-justify text-primary col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-size:11px; margin-left:24px;">
+                      <b class="text-info applypads" style="font-weight: bolder;font-size:1.2rem;">Rocky Jagtiani</b> Technology trainer to companies like Accenture , Morgan Stanley, EY. Have trained more than 18000 candidates in 0-3 years work-ex category. Having 18+ of years of training experience. Would be teaching most of the subjects under data science domain. Specializes in Python , ML and NLP.<br><br><br><br>
+                    </span></div>
+                </div>
+              </div><br><br><br><br>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                  <span class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <img src="https://datascience.suvenconsultants.com/images/testimonials/2per.jpg" class="img-circle fiximg" alt="" width=80 height=80 style="margin-rignt:-5px;">
+                  </span>
+                  <div class="row">
+                    <span class="text-justify text-primary col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-size:11px; margin-left:24px;">
+                      <b class="text-info applypads" style="font-weight: bolder;font-size:1.2rem;">Niraj Sharma</b> Presently Data Analyst at NeoSoft (CMM level 5). An expert in R programming. An active contributor at Kaggle Data Analytics using R competitions. Having 3+ years of training experience. Would be teaching Statistics and Data Analytics using R in this course.<br><br><br><br>
+                    </span></div>
+                </div>
+              </div><br><br><br><br><br><br>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                  <span class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <img src="https://datascience.suvenconsultants.com/elearning/assets/imgm/pankajsharma.JPG" class="img-circle fiximg" alt="" width=80 height=80 style="margin-rignt:-5px;">
+                  </span>
+                  <div class="row">
+                    <span class="text-justify text-primary col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-size:11px; margin-left:24px;">
+                      <b class="text-info applypads" style="font-weight: bolder;font-size:1.2rem;">Pankaj Sharma</b> Pankaj Sharma is presently Senior Software Engineer at Mphasis. Had worked for 6.5 years as a consultant at Capgemini India & UK both. An active contributor at Kaggle ML-NLP-OpenCV competitions. Having ranked with in 500 in most competitions.<br><br><br><br>
+                    </span></div>
+                </div>
+              </div><br><br><br><br><br><br>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                  <span class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <img src="./assets/imgm/kranjekar.jpg" class="img-circle fiximg" alt="" width=80 height=80 style="margin-rignt:-5px;">
+                  </span>
+                  <div class="row">
+                    <span class="text-justify text-primary col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-size:11px; margin-left:24px;">
+                      <b class="text-info applypads" style="font-weight: bolder;font-size:1.2rem;">Hoshang Karanjekar</b> is MTech in Computer Science specializing in AI domain. He works for Viacom18 Media Pvt Ltd. Has a total experience of 4+ years. A problem solver on kaggle. Specializes in FLASK, AWS and deploying ML models on the cloud.<br><br><br><br>
+                    </span></div>
+                </div>
+              </div><br><br><br><br><br><br>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                  <span class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <img src="https://datascience.suvenconsultants.com/images/testimonials/4per.jpg" class="img-circle fiximg" alt="" width=80 height=80 style="margin-rignt:-5px;">
+                  </span>
+                  <div class="row">
+                    <span class="text-justify text-primary col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-size:11px; margin-left:24px;">
+                      <b class="text-info applypads" style="font-weight: bolder;font-size:1.2rem;">Simran Jagtiani</b> Presently Head of HR & Operations , awarded as Women Entrepreneur of the year in 2011. Having mentored more than 5000 participants in the 0-3 years WorkEx category and having successfully placed all of them as IT professional.<br><br>
+                    </span></div>
+                </div>
+              </div><br><br><br><br><br><br>
+            </div>
+          </div>
+        </div>
+        <!-- End Fixed Right Share -->
+        <!-- Begin Post -->
+        <div class="col-md-8 col-md-offset-2 col-xs-12" style="padding-right:4%;">
+          <br><br>
+          <div class="mainheading">
+            <h3 class="posttitle"><span style="color:rgb(56, 118, 29);font-weight:bolder;">2 mins please....</span><span style="font-weight:bolder;"> Let us get Introduced..</span></h3>
+          </div>
+          <!-- Begin Post Content -->
+          <div class="article-post">
+            <p style="font-size:15px;">Well, let us introduce ourselves. We @Suven are a dedicated team of trainers, with Mr. Rocky Jagtiani heading the team. Here is his <a style="text-decoration:underline;" href="https://www.linkedin.com/in/rocky-jagtiani-3b390649/" target="_blank">linked-in profile</a> for details. We are very popular in Mumbai for our "Master's in Data Science" programme with <b style="background-color:yellow;">&nbsp;100% placement calls and 200% ROI&nbsp;</b>. Please <u>Google</u> on "suven consultants reviews" or read some LI post <a style="text-decoration:underline;" href="https://www.linkedin.com/posts/suven-consultants-and-technology-pvt-ltd_fluidai-suvenml-webdevelopment-activity-6639799014827102209--0m9"  target="_blank">here</a>, <a style="text-decoration:underline;" href="https://www.linkedin.com/posts/suven-consultants-and-technology-pvt-ltd_fluidai-suvenml-webdevelopment-activity-6639799014827102209--0m9"  target="_blank">here</a> or <a style="text-decoration:underline;" href="https://www.linkedin.com/posts/rocky-jagtiani-3b390649_nmimsuniversity-students-faculties-activity-6622504323341443073-W3-P" target="_blank">here</a>.</p>
+            <p style="font-size:15px;">Many students and working professionals cannot make it to our class room training programmes (<em style="color:silver;">which don't cost lacs like that of UpGrad or GreatLearning or ... </em>) due to distance and time constraints.</p>
+            <p style="font-size:15px;">Our team practically gets one request per day from students, College TPO's and IT support staff for <u>our data science courses</u> over Linked-in. <b style="background-color:yellow;">&nbsp;So here we are&nbsp;</b> with our <b style="background-color:yellow;">&nbsp;e-learning course modules&nbsp;</b>.</p>
+            <p style="font-size:15px;">It's your turn......<b style="background-color:yellow;">&nbsp;Please introduce yourself&nbsp;
+</b> &nbsp;&nbsp;&nbsp;<i style="color:silver;position:absolute;top:358px;" class="fa fa-arrow-right fa-2x arrow1" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button onclick="window.open('https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform')" class="btn" style="background-color:white;border:2px solid green;"><u><b>here</b></u></button></p>
+            <br><br>
+            </div>
+          <div class="mainheading">
+            <h3 class="posttitle"><span style="color:rgb(56, 118, 29);font-weight:bolder;">2 mins please....</span><span style="font-weight:bolder;"> Now about the Courses :</span></h3>
+          </div>
+            <div class="article-post">
+            <p style="font-size:15px;">Well, the SuvenML team over the last 3 years of classroom training in Data Science experienced that their target audiences are of two categories :</p>
+
+            </div>
+            <div class="mainheading">
+            <h4 class="posttitle"><span style="color:rgb(56, 118, 29);font-weight:bolder;"></span><span style="font-weight:bolder;">Category A.</span></h4>
+          </div>
+            <div class="article-post">
+            <p style="font-size:15px;">Students and Fresh Graduates wanting placements - post training</p>
+            
+            </div>
+            <div class="mainheading">
+            <h4 class="posttitle"><span style="color:rgb(56, 118, 29);font-weight:bolder;"></span><span style="font-weight:bolder;">Category B.</span></h4>
+          </div>
+            <div class="article-post">
+            <p style="font-size:15px;">Working Professionals (below 4 years workEx) and Students planning for MS(in US or UK) in some data science domain.</p>
+           
+            </div>
+            <div class="article-post">
+            <p style="font-size:15px;"><b style="font-weight:bolder;background-color:yellow;">For Category A learners we have a package of 7 subjects</b> namely Python Core programming fundamentals, SQL - Beginner to Intermediate, Python for Data Science, Machine Learning - Beginner, Machine Learning - Intermediate, Web skills for Coding Intelligent* Web application and Job-Prep Course.</p>
+            <p style="font-size:15px;">This whole package of 6 subjects has to be taken together as it leads to <b style="font-weight:bolder;background-color:yellow;">100% placements</b>. Each subject has a <b style="font-weight:bolder;background-color:yellow;">e-Certification issued after the required assessment is done</b>.</p>
+            <p style="font-size:15px;"><b style="font-weight:bolder;background-color:yellow;">For Category B learners we have many subjects to choose from.</b> One can choose one or more subjects according to skill he/she wishes to add to their profile. <b style="font-weight:bolder;background-color:yellow;">Each subject has a e-Certification issued after the required assessment</b> is done.</p>
+            <br><br>
+            </div>
+            <div class="mainheading">
+            <h3 class="posttitle"><span style="color:rgb(56, 118, 29);font-weight:bolder;">Last 1 min....</span><span style="font-weight:bolder;"> Why learn from us ?</span></h3>
+          </div>
+            <div class="article-post">
+            <p style="font-size:15px;">We promise we are better than most other online course providers out their on www. OOPs.. you think we are boosting.. not at all.</p>
+            </div>
+            <div class="hideshare"></div>
+            <div class="mainheading">
+            <h4 class="posttitle"><span style="color:rgb(56, 118, 29);font-weight:bolder;"></span><span style="font-weight:bolder;">Quick Pointers  :</span></h4>
+          </div>
+            <div class="article-post">
+            <p style="font-size:13px;"><b>></b> <span style="color:rgb(56, 118, 29);font-weight:bold;">trained</span> more than 15000 learners<br>
+            <b>></b> <span style="color:rgb(56, 118, 29);font-weight:bold;">placed 78%</span> immediately with in a month of completing the Placement track.<br>
+            <b>></b> So many people speaking <span style="color:rgb(56, 118, 29);font-weight:bolder;">(good)</span> about us on social media.<br> 
+            <b>></b> See <a style="text-decoration:underline;" href="https://www.linkedin.com/posts/rocky-jagtiani-3b390649_happy-blessed-databasejobs-activity-6617275475507150849-Wi6Z" target="_blank">here</a> or <a style="text-decoration:underline;" href="https://www.linkedin.com/posts/rocky-jagtiani-3b390649_spit-nlp-fdp-activity-6611635324244332544-jLbB" target="_blank">here</a> or <b>simply Google "rocky sir suven".</b><br>
+            <b>></b> <span style="color:rgb(56, 118, 29);font-weight:bolder;">Each online course has a 20% open content for you</span> to analyze our quality.<br>
+            <!--<b>></b> Yes, we don't have any Refund policy. Because we are doing our work with 100% sincerity and commitment. <span style="color:rgb(56, 118, 29);font-weight:bolder;">You don't understand concept or code talk/chat with the trainer</span>. Mr Rocky Jagtiani & entire SuvenML team  strongly believes in quality and will provide best to their learners.<br>-->
+            <b>></b> Each course has<br>
+            <b>max <span style="color:rgb(56, 118, 29);font-weight:bold;">25% Video</span></b> to explain the concepts<br>
+            <b>max <span style="color:rgb(56, 118, 29);font-weight:bold;">25% reading</span></b> on theory concepts<br>
+            <span style="font-weight:bolder;background-color:yellow;">50-60% code execution in</span> Colab Notebooks or some other IDE
+            </p>
+            <div class="mainheading">
+            <h4 class="posttitle"><span style="color:rgb(56, 118, 29);font-weight:bolder;">After-all you learn coding,</span><span style="font-weight:bolder;"> by coding !!</span></h4>
+          </div>
+            <br><br>
+            </div>
+            
+           <div class="article-post">
+            <br>
+            <div class="container" style="margin-left:-5%;">
+              <div class="row">
+                <div class="col-lg-1 col-md-1">
+                  <!--*******************************************************************************************************************************************************************-->
+                  <div style="position:absolute;" class="move-left">
+                    <!--Testimonials start-->
+                    <div class="container text-center text-justify" style="">
+                      <br><br><br><br><br><br><br><br><br><br><br><br>
+                      <h3 class="text-success"><span style="font-weight:bolder; padding-left:24px;">Testimonials</span><br><span style="font-weight:bolder;"></span></h3><br>
+                      <div class="">
+                        <div class="row">
+                          <div class="row" style="padding-left:4%;">
+                            <div class="row">
+                              <span class="col-md-3" style="">
+                                <img src="assets/imgm/testimonials/samiksha.jpg" class="img-circle fiximg" alt="" width=80 height=80>
+                              </span><br><br><br><br>
+                              <div class="row">
+                                <span class="text-center text-primary col-lg-3 colmd-3 col-sm-3 col-xs-3" style="font-size:11px;padding:21px;margin-top:-2.3%;margin-left:1.1%;">
+                                  <p><b class="text-info applypads" style="font-weight: bolder;font-size:1.3rem;">Pratiksha Patil</b></p>
+                                  <p class="text-info" style="font-size:11px;margin-top:-10px;">Rocky Sir, and his team helped me in understanding all core ML concepts.</p>
+                                  <p class="text-info" style="font-size:11px;margin-top:-10px;font-weight: bolder;font-size:1.3rem;">BTech(CS) | Jr. Data Analyst</p><br>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row" style="padding-left:4%;">
+                            <div class="row">
+                              <span class="col-md-3" style="">
+                                <img src="assets/imgm/testimonials/nidhi.jpg" class="img-circle fiximg" alt="" width=80 height=80>
+                              </span><br><br><br><br>
+                              <div class="row">
+                                <span class="text-center text-primary col-lg-3 col-md-3 col-sm-3 col-xs-3" style="font-size:11px;padding:21px;margin-top:-2.3%;margin-left:1.1%;">
+                                  <p><b class="text-info applypads" style="font-weight: bolder;font-size:1.3rem;">Nidhi Shah</b></p>
+                                  <p class="text-info" style="font-size:11px;margin-top:-10px;">The Jupyter Notebooks made by SuvenML team is awesome. I enjoyed learning at SuvenML.</p>
+                                  <p class="text-info" style="font-size:11px;margin-top:-10px;font-weight: bolder;font-size:1.3rem;">BSci(CS) | Jr. Data Scientist </p><br>
+                                </span></div>
+                            </div>
+                          </div>
+                          <div class="row" style="padding-left:4%;">
+                            <div class="row">
+                              <span class="col-md-3" style="">
+                                <img src="assets/imgm/testimonials/shrivats.jpg" class="img-circle fiximg" alt="" width=80 height=80 style="margin-rignt:-5px;">
+                              </span><br><br><br><br>
+                              <div class="row">
+                                <span class="text-center text-primary col-lg-3 colmd-3 col-sm-3 col-xs-3" style="font-size:11px;padding:21px;margin-top:-2.3%;margin-left:1.1%;">
+                                  <p><b class="text-info applypads" style="font-weight: bolder;font-size:1.3rem;">Sameeksha Shrivastava</b></p>
+                                  <p class="text-info" style="font-size:11px;margin-top:-10px;">Each course at Suven is awesome. I have done almost all.</p>
+                                  <p class="text-info" style="font-size:11px;margin-top:-10px;font-weight: bolder;font-size:1.3rem;">System Engineer | 5+ Years Work Exp.</p><br>
+                                </span></div>
+                            </div>
+                          </div>
+                          <div class="row" style="padding-left:4%;">
+                            <div class="row">
+                              <span class="col-md-3" style="">
+                                <img src="assets/imgm/testimonials/akash.jpg" class="img-circle fiximg" alt="" width=80 height=80 style="margin-rignt:-5px;">
+                              </span><br><br><br><br>
+                              <div class="row">
+                                <span class="text-center text-primary col-lg-3 colmd-3 col-sm-3 col-xs-3" style="font-size:11px;padding:21px;margin-top:-2.3%;margin-left:1.1%;">
+                                  <p><b class="text-info applypads" style="font-weight: bolder;font-size:1.3rem;">Aahan Gupta</b></p>
+                                  <p class="text-info" style="font-size:11px;margin-top:-10px;">Learning from their courses enabled me fully to take part and excel in kaggle competitions. Great content , great teaching.</p>
+                                  <p class="text-info" style="font-size:11px;margin-top:-10px;font-weight: bolder;font-size:1.3rem;">BE(CS) | Data Scientist</p><br>
+                                </span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--End Testimonials-->
+                  <!--********************************************************************************************************************************************************************-->
+                </div>
+                <!--SECTION1 MICROCOURSES FOR LG MD-->
+                
+                <h3 class="text-center" style="margin-top:10%;margin-left:-22%;font-size:25px; font-weight:bolder;"><strong><span style="color:#28a745;">Package of 6 courses</span><span style="">&nbsp;for Freshers & Non-CS candidates&nbsp;</span><span style="color:#28a745;">seeking Placements</span></strong></h3>
+                    <h4 class="posttitle text-center" style="font-size:16px;color:gray;margin-left:-23%;">Placement Oriented "Data Science Track" with Web Implementation skills</h4><br><br><br>
+                <div id="microcourses" class="col-lg-9 col-md-9" style="margin-left:9%;">
+                  <div class="card col-lg-10 col-md-10 col-xs-10 col-sm-10" style="margin-left:-2%;">
+                    
+                    <ul class="list-group list-group-flush">
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                        <li class="list-group-item style_prevu_kit">
+                          <div class="row">
+                            <div class="col-md-2"><img src="images/jsocPython.png" width="135" height="130" class="rounded img-fluid float-left" alt="..."></div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-9"><span style="margin-left:-5%;margin-right:7%;" class="badge badge-primary badge-pill">A</span><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Python Core programming fundamentals</b><br>
+                                <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Datatypes & their build-in functions, Control Statements, Reading/Writing from files, Exception Handling, Regex & its daily application, Classes & Objects. Two Mini projects for practice</p>
+                              </span></div>
+                              <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:490px;bottom:1px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Explore</a>
+                          </div>
+                        </li>
+                      </a>
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                        <li class="list-group-item style_prevu_kit">
+                          <div class="row">
+                            <div class="col-md-2"><img src="images/sql.png" width="135" height="130" class="rounded img-fluid float-left" alt="..."></div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-9"><span style="margin-left:-5%;margin-right:7%;" class="badge badge-primary badge-pill">B</span><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">SQL - Beginner to Intermediate</b><br>
+                                <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Learn the workflow for handling big datasets with BigQuery and SQL, Select, From & Where, Group By, Having & Count, Order By, As & With, Joining Data. Solving challenges on Hackerrank.com scoring at least 3 star ranking.</p>
+                              </span></div>
+                              <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:490px;bottom:1px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Explore</a>
+                          </div>
+                        </li>
+                      </a>
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                        <li class="list-group-item style_prevu_kit">
+                          <div class="row">
+                            <div class="col-md-2"><img src="images/jsocPythonDS.png" width="135" height="130" class="rounded img-fluid float-left" alt="..."></div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-9"><span style="margin-left:-5%;margin-right:7%;" class="badge badge-primary badge-pill">C</span><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Python for Data Science</b><br>
+                                <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">NumPy Basics for Data Science, Pandas for Data Analysis, Matplotlib for Data Visualization, solving many case studies applying NumPy, Pandas and Matplotlib functions.</p>
+                              </span></div>
+                              <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:490px;bottom:-13px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Explore</a>
+                          </div>
+                        </li>
+                      </a>
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                        <li class="list-group-item style_prevu_kit">
+                          <div class="row">
+                            <div class="col-md-2"><img src="images/machinelearn.png" width="135" height="130" class="rounded img-fluid float-left" alt="..."></div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-9"><span style="margin-left:-5%;margin-right:7%;" class="badge badge-primary badge-pill">D</span><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Machine Learning - Beginner</b><br>
+                                <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Supervised & Unsupervised ML, ML pipeline, Basic Data Exploration, Encoding Categorical data, Feature Scaling, Naive Bayes Classification, Linear Regression, Decision Trees, Random Forest, Principal Component Analysis, k-Means Clustering and deploying ML models on FLASK</p>
+                              </span></div>
+                              <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:490px;bottom:5px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Explore</a>
+                          </div>
+                        </li>
+                      </a>
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                        <li class="list-group-item style_prevu_kit">
+                          <div class="row">
+                            <div class="col-md-2"><img src="images/machinelearn.png" width="135" height="130" class="rounded img-fluid float-left" alt="..."></div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-9"><span style="margin-left:-5%;margin-right:7%;" class="badge badge-primary badge-pill">E</span><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Machine Learning - Intermediate</b><br>
+                                <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Problem of underfitting & overfitting data, Cross Validation, Impute Missing Values, Feature Engineering, Feature Extraction vs. Feature Selection, Pipelines, XGBoost, lots of solved case studies to reinforce concepts.</p>
+                              </span></div>
+                              <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:490px;bottom:3px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Explore</a>
+                          </div>
+                        </li>
+                      </a>
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                        <li class="list-group-item style_prevu_kit">
+                          <div class="row">
+                            <div class="col-md-2"><img src="images/www.png" width="135" height="130" class="rounded img-fluid float-left" alt="..."></div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-9"><span style="margin-left:-5%;margin-right:7%;" class="badge badge-primary badge-pill">F</span><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Web skills for Coding Intelligent* Web application</b><br>(*Intelligent means integrating ML model into Web App)<br>
+                                <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Recalling HTML5, Css3, Javascript. Learning AJAX-PHP-MySQL for developing a complete end to end Web based application. Deploying ML on FLASK, Integrating ML with PHP-MySQL Web App. <b>Internship projects</b> with detailed coding steps for practice. <b>Bonus topic</b> : Intro to Node.js and when to use it.</p>
+                              </span></div>
+                              <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:602px;bottom:5px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Explore</a>
+                          </div>
+                        </li>
+                      </a>
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                        <li class="list-group-item style_prevu_kit">
+                          <div class="row">
+                            <div class="col-md-2"><img src="images/interview-prep.png" width="135" height="130" class="rounded img-fluid float-left" alt="..."></div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-9"><span style="margin-left:-5%;margin-right:7%;" class="badge badge-primary badge-pill">G</span><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Job-Prep Course</b><br>
+                                <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Tips on Quantitative & Verbal Aptitude, making your "Best looking Resume" and boosting confidence for Interviews. 2 Mock Interview calls - one Technical & other HR.<br>On successfully <b>finishing all 7 subjects</b> from A to G our company would offer <b>100% placements</b> to the candidate.</p>
+                              </span></div>
+                              <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:490px;bottom:5px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Explore</a>
+                          </div>
+                        </li>
+                      </a>
+                      <li type="none" class="text-center">
+                        <div class="row" style="padding-top:2%; padding-left:7%"><br>
+                          <div class="col-md-12"><span style="display:inline;">
+                              <b style="text-decoration:underline;margin-left:-5%; color:black;" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='black'"></b>
+                              <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Above courses from <span style="" class="badge badge-primary badge-pill">A</span> to <span style="" class="badge badge-primary badge-pill">G</span> form placement oriented "Data Science Track" with web implementation skills</p>
+                              <!--<ul style="list-style-type:disc;margin-left:-10%;">-->
+                              <!--  <li style="margin-top:-2%;">-->
+                              <!--    <p style="font-size:11px;color:gray;">Data Visualization and Analysis</p>-->
+                              <!--  </li>-->
+                              <!--  <li style="margin-top:-2%;">-->
+                              <!--    <p style="font-size:11px;color:gray;">Natural Language Processing - Beginner to Intermediate</p>-->
+                              <!--  </li>-->
+                              <!--  <li style="margin-top:-2%;">-->
+                              <!--    <p style="font-size:11px;margin-right:5px;color:gray;">Deep Learning for NLP & Text based applications</p>-->
+                              <!--  </li>-->
+                              <!--</ul>-->
+                            </span></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--New testimonials-->
+              <div class="row" style="margin-left:-17%;">
+                <div class="container" style="">
+                  <div class="row-fluid" style=":line-height:18px;">
+                    <div class="" style="padding:50px;">
+                      <div class="container">
+                        <h1 class="text-center"><strong><span style="color:#28a745;">Success</span><span style="color:#28a745;"></span> Stories</strong></h1><br>
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner">
+                            <div class="item active">
+                              <div class="row">
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-5">
+                                  <img src="images/getpic0.jpg" alt="" style="max-height:260px; max-width:90%;" class="img-fluid img-thumbnail mx-auto">
+                                </div>
+                                <div class="col-lg-5">
+                                  <h3>Gaurav Vishwakarma</h3>
+                                  <p><span style="color:#28a745;">Web Developer @ Mukesoft</span><br>Thank you soo much (Simran) Mam. Its been a great experience and also created some good memories from Suven consultants which i would never forgot.
+                                    feedback given on <a style="font-size:10px;" href="https://www.linkedin.com/feed/update/urn:li:activity:6634361999662911488/" target="_blank">https://www.linkedin.com/feed/update/urn:li:activity:6634361999662911488/</a>
+                                  </p>
+                                </div>
+                                <div class="col-lg-1"></div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="row">
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-5">
+                                  <img src="images/getpic1.jpg" alt="" style="max-height:260px; max-width:90%;" class="img-fluid img-thumbnail mx-auto">
+                                </div>
+                                <div class="col-lg-5">
+                                  <h3>Arvind Yadav</h3>
+                                  <p><span style="color:#28a745;">Web Developer @Coense Solutions #ProjectHeena</span><br>Excellent course work , brilliant teaching by Rocky sir and his team. Complete hand holding by Simran Mam in scheduling interviews & placing me.
+                                  </p>
+                                </div>
+                                <div class="col-lg-1"></div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="row">
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-5">
+                                  <img src="images/getpic2.jpg" alt="" width="80%" height="70%" class="img-fluid img-thumbnail mx-auto">
+                                </div>
+                                <div class="col-lg-5">
+                                  <h3>Rahul Sar</h3>
+                                  <p><span style="color:#28a745;">Software developer @ Accenture</span><br>I am blessed to be mentored for various subjects under Rocky Sir & his team. Their content and teaching is absolutely great in depth as well easy to understand.
+                                  </p>
+                                </div>
+                                <div class="col-lg-1"></div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="row">
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-5">
+                                  <img src="images/getpic3.jpg" width="80%" height="70%" class="img-fluid img-thumbnail mx-auto">
+                                </div>
+                                <div class="col-lg-5">
+                                  <h3>Zuhrah Sirguroh</h3>
+                                  <p><span style="color:#28a745;">Professional web scraper at dMACQ Software</span><br>Jupyter Notebooks for the entire data science track is awesome. Short Video of 10-15 mins explaining the concept to the point. Theory taking me in depth. Lots of coding examples to implement what we see & read.
+                                  </p>
+                                </div>
+                                <div class="col-lg-1"></div>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <div class="row">
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-5">
+                                  <img src="images/getpic4.jpg" alt="" width="80%" height="70%" class="img-fluid img-thumbnail mx-auto">
+                                </div>
+                                <div class="col-lg-5">
+                                  <h3>Prathibha Gupta</h3>
+                                  <p><span style="color:#28a745;">Software developer @ Majesco</span><br>Team @ Suven Consultants is very dedicated , well connected with each and every student. I found their "Master in Data Science Programme" very useful in my daily job and career upgrade.
+                                  </p>
+                                </div>
+                                <div class="col-lg-1"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <ol class="carousel-indicators" style="bottom: -30px;">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3 class="text-center" style="margin-top:9%; font-size:30px; font-weight:bolder;"><strong><span style="color:#28a745;">Independent</span><span style="">&nbsp;Courses for&nbsp;</span><span style="color:#28a745;">IT Professionals & Students*</span></strong></h3>
+                    <h4 class="posttitle text-center" style="font-size:16px;color:gray;">(*Planning for MS in Data Science or Analytics)</h4><br><br><br>
+
+    <div class="container-fluid" style="margin: 0 10% 0 10%;">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 card style_prevu_kit2" style="min-height: 340px;background-color:#eee;">
+          <div class="">
+            <a   href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+              <div class="jumbotron text-center" style="margin-top:0%;padding-top:8px; ">
+                <img class="img-responsive" src="images/datavis.png"><br>
+                <p style="font-size:13px;">Data Visualization and Analysis</p>
+                <h4><b></b></h4>
+              </div>
+              
+            </a>
+          </div>
+          <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:90px;bottom:-40px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Starts Aug 2020</a>
+        </div>
+        <div class="col-lg-3 col-md-3 card style_prevu_kit2" style="min-height: 340px;background-color:#eee;">
+          <div class="">
+            
+            <a   href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+              <div class="jumbotron text-center" style="margin-top:0%;padding-top:8px; ">
+                <img class="img-responsive" src="images/pythonBA.png"><br>
+                <p style="font-size:13px;">Python for Daily Business Task Automation</p>
+                <h4><b></b></h4>
+              </div>
+            </a>
+          </div>
+          <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:90px;bottom:-35px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Starts Aug 2020</a>
+
+        </div>
+        <div class="col-lg-3 col-md-3 card style_prevu_kit2" style="min-height: 340px;background-color:#eee;">
+          <div class="" >
+            
+            <a   href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+              <div class="jumbotron text-center" style="margin-top:0%;padding-top:8px; ">
+                <img class="img-responsive" src="images/financeauto.png"><br>
+                <p style="font-size:13px;">Python & ML for Finance</p>
+                <h4><b></b></h4>
+              </div>
+            </a>
+          </div>
+          <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:90px;bottom:-52px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Starts Oct 2020</a>
+
+        </div>
+        <div class="col-lg-3 col-md-3  card style_prevu_kit2" style="min-height: 340px;background-color:#eee;">
+          <div class="">
+            
+            <a   href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+              <div class="jumbotron text-center" style="margin-top:0%;padding-top:8px; ">
+                <img class="img-responsive" src="images/unittesting.png"><br>
+                <p style="font-size:13px;">Python & ML for Unit Test Automation</p>
+                <h4><b></b></h4>
+              </div>
+            </a>
+          </div>
+          <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:90px;bottom:-35px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Starts Oct 2020</a>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3  card style_prevu_kit2" style="min-height: 340px;background-color:#eee;">
+          <div class="">
+            
+            <a   href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+              <div class="jumbotron text-center" style="margin-top:0%;padding-top:8px; ">
+                <img class="img-responsive" src="images/seleniumpy.png"><br>
+                <p style="font-size:13px;">Automating Web testing with Selenium using Python</p>
+                <h4><b></b></h4>
+              </div>
+            </a>
+          </div>
+          <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:90px;bottom:-15px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Starts Oct 2020</a>
+
+        </div>
+        <div class="col-lg-3 col-md-3  card style_prevu_kit2" style="min-height: 340px;background-color:#eee;">
+          <div class="">
+            
+            <a   href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+              <div class="jumbotron text-center" style="margin-top:0%;padding-top:8px; ">
+                <img class="img-responsive" src="images/sql.png"><br>
+                <p style="font-size:13px;">SQL - Beginner to Intermediate</p>
+                <h4><b></b></h4>
+              </div>
+            </a>
+          </div>
+          <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:90px;bottom:-52px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Starts Aug 2020</a>
+
+        </div>
+        <div class="col-lg-3 col-md-3  card style_prevu_kit2" style="min-height: 340px;background-color:#eee;">
+          <div class="">
+            
+            <a   href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+              <div class="jumbotron text-center" style="margin-top:0%;padding-top:8px; ">
+                <img class="img-responsive" src="images/sql.png"><br>
+                <p style="font-size:13px;">Advanced SQL</p>
+                <h4><b></b></h4>
+              </div>
+            </a>
+          </div>
+          <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:90px;bottom:-67px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Starts Aug 2020</a>
+
+        </div>
+        <div class="col-lg-3 col-md-3  card style_prevu_kit2" style="min-height: 340px;background-color:#eee;">
+          <div class="">
+            
+            <a   href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+              <div class="jumbotron text-center" style="margin-top:0%;padding-top:8px; ">
+                <img class="img-responsive" src="images/machinelearn.png"><br>
+                <p style="font-size:13px;">Machine Learning - Beginner</p>
+                <h4><b></b></h4>
+              </div>
+            </a>
+          </div>
+          <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:140px;bottom:-45px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Explore</a>
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 card style_prevu_kit2" style="min-height: 340px;background-color:#eee;">
+          <div class="">
+            
+            <a   href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+              <div class="jumbotron text-center" style="margin-top:0%;padding-top:8px; ">
+                <img class="img-responsive" src="images/machinelearn.png"><br>
+                <p style="font-size:13px;">Machine Learning - Intermediate</p>
+                <h4><b></b></h4>
+              </div>
+            </a>
+          </div>
+          <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:140px;bottom:-45px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Explore</a>
+
+        </div>
+        <div class="col-lg-3 col-md-3  card style_prevu_kit2" style="min-height: 340px;background-color:#eee;">
+          <div class="">
+            
+            <a   href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+              <div class="jumbotron text-center" style="margin-top:0%;padding-top:8px; ">
+                <img class="img-responsive" src="images/naturallang.png"><br>
+                <p style="font-size:13px;">Natural Language Processing - Beginner to Intermediate</p>
+                <h4><b></b></h4>
+              </div>
+            </a>
+          </div>
+          <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:140px;bottom:-0px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Explore</a>
+
+        </div>
+        <div class="col-lg-3 col-md-3  card style_prevu_kit2" style="min-height: 340px;background-color:#eee;">
+          <div class="">
+            
+            <a   href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+              <div class="jumbotron text-center" style="margin-top:0%;padding-top:8px; ">
+                <img class="img-responsive" src="images/deeplearn.png"><br>
+                <p style="font-size:13px;">Deep Learning for NLP & Text based applications</p>
+                <h4><b></b></h4>
+              </div>
+            </a>
+          </div>
+          <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:140px;bottom:-35px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Explore</a>
+
+        </div>
+        <div class="col-lg-3 col-md-3  card style_prevu_kit2" style="min-height: 340px;background-color:#eee;">
+          <div class="">
+
+            <a   href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+              <div class="jumbotron text-center" style="margin-top:0%;padding-top:8px; ">
+                <img class="img-responsive" src="images/www.png"><br>
+                <p style="font-size:13px;">Web skills for Coding Intelligent* Web application</p>
+                <p style="font-size:11px;">(*Intelligent means integrating ML model into Web App)</p>
+              </div>
+            </a>
+          </div>
+          <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank" style="left:90px;bottom:58px;" type="button" id="btnadd2" class="label label-primary enrollbtn">Starts Aug 2020</a>
+
+        </div>
+      </div>
+    </div>
+    <!-- End Post -->
+    <!--for mobile-->
+    <!-- Begin Article
+================================================== -->
+    <div class="container hidden-lg hidden-md">
+      <div class="row">
+        <img class="img-responsive" style="margin-top:4%; max-width:100%;" height="60px" src="https://yt3.ggpht.com/MVb4FIpLMFN3HJ7RpIzIZK3IN9wLPjdZDYc8f-Q1smrBxFHKZAvSUTXA28aT5Palwslgkc9bzA=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" />
+        <!-- Begin Fixed Left Share -->
+        <div class="col-xs-12 col-sm-12">
+          <div class="share">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+            <a style="bottom: 25px !important;left: 327px;" href="https://api.whatsapp.com/send?phone=919892544177&text=Hello%20Sir%21%20I%20need%20some%20technical%20guidance" class="float" target="_blank">
+              <i class="fa fa-whatsapp my-float" style="bottom: 13px !important;left: 312px;"></i>
+            </a>
+          </div>
+          <!-- End Fixed Left Share -->
+          <!-- End Fixed Right Share -->
+          <div class="col-sm-12 col-xs-12">
+            <br><br>
+            <div class="mainheading">
+              <!--<h4>The Problem at hand :</h4>-->
+              <h3 class="posttitle">The Problem at hand:</h3>
+            </div><br>
+            <!-- Begin Post Content -->
+            <div class="article-post">
+              <p>Assume, I am student or a programmer or a business analyst trying to solve a problem at hand. Presently I am doing the task at hand in a non-automated way. The tools I use have some paid options, which is company isn't interested to buy. I am looking out for some solutions on Google, I stumble on following hot / Ad links on Google :</p>
+              <ol type="a" style="margin-left:-25px;">
+                <li>Udemy offering some courses upto $90. Most of courses don't solve open realtime problems.</li>
+                <li>Cousera / Udacity ask for monthly membership and are too long to remain dedicated online.</li>
+                <li>Edureka or Great Lakes or UpGrad are way too expensive. Price ranging from 30k to 4 Lacs for their online courses.</li>
+                <li>Some stack overflow answers where I could solve my problem <u><b>partially</b></u>, But I didn't understand what / how it happened. Hence I am not able to reproduce it.</li>
+                <li><b>Class room coaching under a trainer</b> is the only best option, but that may not be feasible in terms of time or reach-ability or both.</li>
+              </ol>
+              <br>
+              <h3 class="posttitle">Don't worry, our team is here to solve this problem </h3><br>
+              <p>
+                Well, we are coming up very aggressively with set of Micro courses each explaining a concept in detail , solving lots of simple real time problems and learning through running codes in Jupyter Notebooks.
+                <b style="background-color:yellow;">Each Micro-course would be between 10 to 12 hrs with 75% reading + executing codes and 25% via video content(in hindi and english mix).</b>
+              </p>
+              <p>
+                Everyone faces problems and get doubts. Hence the authors of the micro-course themselves take responsibility of solving your doubts either in the form of text or video answers on whats-app group.
+                So, you get best quality content, lots of coded examples and doubt solving facility, and more... for less than $44 (or INR 3000) for each micro-course.
+              </p><br>
+              <h3 class="posttitle">Assessment & Certifications: </h3><br>
+              <p>
+                Each micro-course has a case study on kaggle to be solved. The same would be assessed by the Author of the course through a telephonic interview or through a video call. Here the author/mentor would like to the understand your process of solving, your approach to the problem and the major steps you would use in coding. <b style="background-color:yellow;">After a successful telephonic interview and your kaggle-colab work assessment only the author/mentor would award a e-Certificate of Completion.</b></p>
+              <p>Each micro-course has a deadline of one month for completion. Trust us, you can easily do it, once you start it. <b style="background-color:yellow;">We the authors promise to be your best teachers</b> while you learn ML from the core Concepts to Problem solving.</p>
+              <br>
+              <div class="container" style="">
+                <div class="row">
+                  <!--<div class="col-sm-12 col-xs-12">-->
+                  <!--*******************************************************************************************************************************************************************-->
+                  <!--<div style="position:absolute;" class="move-left">-->
+                  <!--Testimonials start-->
+                  <!--<div class="container text-center text-justify" style="">-->
+                  <!--  <br><br><br><br><br><br><br><br>-->
+                  <!--  <h3 class="text-success"><span style="font-weight:bolder; padding-left:30px;">Testimonials</span><br><span style="font-weight:bolder;"></span></h3><br>-->
+                  <!--  <div class="">-->
+                  <!--    <div class="row">-->
+                  <!--      <div class="row"  style="padding-left:4%;">-->
+                  <!--        <div class="row">-->
+                  <!--          <span class="col-md-3" style="">-->
+                  <!--            <img src="assets/imgm/testimonials/samiksha.jpg" class="img-circle fiximg" alt="" width=80 height=80 >-->
+                  <!--          </span><br><br><br><br>-->
+                  <!--          <div class="row">-->
+                  <!--            <span class="text-center text-primary col-sm-3 col-xs-3 col-sm-3 col-xs-3" style="font-size:11px;padding:21px;margin-top:-2.3%;margin-left:1.1%;">-->
+                  <!--              <p><b class="text-info applypads" style="font-weight: bolder;font-size:1.3rem;">Pratiksha Patil</b></p>-->
+                  <!--              <p class="text-info" style="font-size:11px;margin-top:-10px;">Rocky Sir, and his team helped me in understanding all core ML concepts.</p>-->
+                  <!--              <p class="text-info" style="font-size:11px;margin-top:-10px;font-weight: bolder;font-size:1.3rem;">BTech(CS) | Jr. Data Analyst</p><br>-->
+                  <!--            </span>-->
+                  <!--          </div>-->
+                  <!--        </div>-->
+                  <!--      </div><br><br>-->
+                  <!--      <div class="row"  style="padding-left:4%;">-->
+                  <!--        <div class="row"> -->
+                  <!--          <span class="col-md-3"  style="">-->
+                  <!--            <img src="assets/imgm/testimonials/nidhi.jpg" class="img-circle fiximg" alt="" width=80 height=80 >-->
+                  <!--          </span><br><br><br><br>-->
+                  <!--          <div class="row">-->
+                  <!--            <span class="text-center text-primary col-lg-3 col-md-3 col-sm-3 col-xs-3" style="font-size:11px;padding:21px;margin-top:-2.3%;margin-left:1.1%;">-->
+                  <!--              <p><b class="text-info applypads" style="font-weight: bolder;font-size:1.3rem;">Nidhi Shah</b></p>-->
+                  <!--              <p class="text-info" style="font-size:11px;margin-top:-10px;">The Jupyter Notebooks made by SuvenML team is awesome. I enjoyed learning at SuvenML.</p>-->
+                  <!--              <p class="text-info" style="font-size:11px;margin-top:-10px;font-weight: bolder;font-size:1.3rem;">BSci(CS) | Jr. Data Scientist </p><br>-->
+                  <!--            </span></div>-->
+                  <!--        </div>-->
+                  <!--      </div><br><br>-->
+                  <!--      <div class="row"  style="padding-left:4%;">-->
+                  <!--        <div class="row">-->
+                  <!--          <span class="col-sm-3"  style="">-->
+                  <!--            <img src="assets/imgm/testimonials/shrivats.jpg" class="img-circle fiximg" alt="" width=80 height=80 style="margin-rignt:-5px;">-->
+                  <!--          </span><br><br><br><br>-->
+                  <!--          <div class="row">-->
+                  <!--            <span class="text-center text-primary col-sm-3 col-sm-3 col-sm-3 col-xs-3" style="font-size:11px;padding:21px;margin-top:-2.3%;margin-left:1.1%;">-->
+                  <!--              <p><b class="text-info applypads" style="font-weight: bolder;font-size:1.3rem;">Sameeksha Shrivastava</b></p>-->
+                  <!--              <p class="text-info" style="font-size:11px;margin-top:-10px;">Each course at Suven is awesome. I have done almost all.</p>-->
+                  <!--              <p class="text-info" style="font-size:11px;margin-top:-10px;font-weight: bolder;font-size:1.3rem;">System Engineer | 5+ Years Work Exp.</p><br>-->
+                  <!--            </span></div>-->
+                  <!--        </div>-->
+                  <!--      </div><br><br>-->
+                  <!--      <div class="row"  style="padding-left:4%;">-->
+                  <!--        <div class="row">-->
+                  <!--          <span class="col-md-3"  style="">-->
+                  <!--            <img src="assets/imgm/testimonials/akash.jpg" class="img-circle fiximg" alt="" width=80 height=80 style="margin-rignt:-5px;">-->
+                  <!--          </span><br><br><br><br>-->
+                  <!--          <div class="row">-->
+                  <!--            <span class="text-center text-primary col-sm-3 col-sm-3 col-sm-3 col-xs-3" style="font-size:11px;padding:21px;margin-top:-2.3%;margin-left:1.1%;">-->
+                  <!--              <p><b class="text-info applypads" style="font-weight: bolder;font-size:1.3rem;">Aahan Gupta</b></p>-->
+                  <!--              <p class="text-info" style="font-size:11px;margin-top:-10px;">Learning from their courses enabled me fully to take part and excel in kaggle competitions. Great content , great teaching.</p>-->
+                  <!--              <p class="text-info" style="font-size:11px;margin-top:-10px;font-weight: bolder;font-size:1.3rem;">BE(CS) | Data Scientist</p><br>-->
+                  <!--            </span></div>-->
+                  <!--        </div>-->
+                  <!--      </div>-->
+                  <!--    </div>-->
+                  <!--  </div>-->
+                  <!--</div>-->
+                  <!--</div>-->
+                  <!--End Testimonials-->
+                  <!--********************************************************************************************************************************************************************-->
+                  <!--</div>-->
+                  <div id="microcourses" class="col-sm-12 col-xs-12" style="margin-left:1%;">
+                    <h3 class="posttitle" style="text-decoration: underline solid black;">Micro-Courses: </h3><br>
+                    <div class="card col-sm-9" style="margin-left:-2%;">
+                      <ul class="list-group list-group-flush">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-xs-1"><img src="assets/imgm/icons/python.JPG" width="85" height="80" class="rounded img-fluid float-left" alt="..."></div>
+                              <div class="col-xs-11" style="margin-left: 22px;"><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Python Core programming fundamentals</b><br>
+                                  <p style="margin-left:-5%;font-size:11px;margin-top:2px;color:gray;">Datatypes & their build-in functions, Control Statements, Reading/Writing from files, Exception Handling, Regex & its daily application, Classes & Objects</p>
+                                </span></div>
+                            </div>
+                          </li>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                          <li class="list-group-item ">
+                            <div class="row">
+                              <div class="col-xs-1"><img src="assets/imgm/icons/pypy.jpg" width="85" height="80" class="rounded img-fluid float-left" alt="..."></div>
+                              <div class="col-xs-11" style="margin-left: 22px;"><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Python for Data Science</b><br>
+                                  <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">NumPy Basics for Data Science, Pandas for Data Analysis, Matplotlib for Data Visualization, solving many case studies applying NumPy, Pandas and Matplotlib functions.</p>
+                                </span></div>
+                            </div>
+                          </li>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-xs-1"><img src="assets/imgm/icons/ml.JPG" width="85" height="80" class="rounded img-fluid float-left" alt="..."></div>
+                              <div class="col-xs-11" style="margin-left: 22px;"><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Machine Learning - Beginner</b><br>
+                                  <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Supervised & Unsupervised ML, ML pipeline, Basic Data Exploration, Encoding Categorical data, Train-Test-Split, Feature Scaling, Linear Regression, Decision Trees, Random Forest, Naive Bayes Classification, Principal Component Analysis, k-Means Clustering and deploying ML models on FLASK </p>
+                                </span></div>
+                            </div>
+                          </li>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-xs-1"><img src="assets/imgm/icons/aml.JPG" width="85" height="80" class="rounded img-fluid float-left" alt="..."></div>
+                              <div class="col-xs-11" style="margin-left: 22px;"><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Machine Learning - Intermediate</b><br>
+                                  <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Problem of underfitting & overfitting data, Cross Validation, Impute Missing Values, Feature Engineering, Feature Extraction vs. Feature Selection, Pipelines, XGBoost, lots of solved case studies to reinforce concepts.</p>
+                                </span></div>
+                            </div>
+                          </li>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-xs-1"><img src="assets/imgm/icons/dv.JPG" width="85" height="80" class="rounded img-fluid float-left" alt="..."></div>
+                              <div class="col-xs-11" style="margin-left: 22px;"><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Data Visualization and Analysis</b><br>
+                                  <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Pandas, NumPy, MatplotLib, Seaborn, Learning by solving lots of EDA Case studies</p>
+                                </span></div>
+                            </div>
+                          </li>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-xs-1"><img src="assets/imgm/icons/pdbta.PNG" width="85" height="80" class="rounded img-fluid float-left" alt="..."></div>
+                              <div class="col-xs-11" style="margin-left: 22px;"><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Python for daily Business Task Automation</b><br>
+                                  <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Regex and its daily applications, Web Scrapping, Reading, Writing & Extracting objects from PDF & Word Documents, Analysis of Excel data, CSV & JSON Parsing, Mini projects for practicing.</p>
+                                </span></div>
+                            </div>
+                          </li>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-xs-1"><img src="assets/imgm/icons/pmf.jpg" width="85" height="80" class="rounded img-fluid float-left" alt="..."></div>
+                              <div class="col-xs-11" style="margin-left: 22px;"><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Python & ML for Finance</b><br>
+                                  <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Finance terms, Pandas, NumPy, Time-Series Forecasting, Learning by solving lots of Finance domain Case studies using ML</p>
+                                </span></div>
+                            </div>
+                          </li>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-xs-1"><img src="assets/imgm/icons/ut.PNG" width="85" height="80" class="rounded img-fluid float-left" alt="..."></div>
+                              <div class="col-xs-11" style="margin-left: 22px;"><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Python & ML for Unit Test Automation</b><br>
+                                  <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Concepts in software testing, Python Unit Test Automation using doctest, unittest, nose, nose2, and pytest. Bonus topic : Using ML for Penetration testing</p>
+                                </span></div>
+                            </div>
+                          </li>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-xs-1"><img src="assets/imgm/icons/awtsp.PNG" width="85" height="80" class="rounded img-fluid float-left" alt="..."></div>
+                              <div class="col-xs-11" style="margin-left: 22px;"><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Automating Web testing with Selenium using Python</b><br>
+                                  <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Learn how the Selenium WebDriver Python API can be integrated with CI and Build tools to allow tests to be run while building applications. </p>
+                                </span></div>
+                            </div>
+                          </li>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-xs-1"><img src="assets/imgm/icons/pandas.JPG" width="85" height="80" class="rounded img-fluid float-left" alt="..."></div>
+                              <div class="col-xs-11" style="margin-left: 22px;"><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Pandas</b><br>
+                                  <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Solve short hands-on challenges to perfect your data manipulation skills.</p>
+                                </span></div>
+                            </div>
+                          </li>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-xs-1"><img src="assets/imgm/icons/featureng.JPG" width="85" height="80" class="rounded img-fluid float-left" alt="..."></div>
+                              <div class="col-xs-11" style="margin-left: 22px;"><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Feature Engineering</b><br>
+                                  <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Discover the most effective way to improve your models.</p>
+                                </span></div>
+                            </div>
+                          </li>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-xs-1"><img src="assets/imgm/icons/sql.JPG" width="85" height="80" class="rounded img-fluid float-left" alt="..."></div>
+                              <div class="col-xs-11" style="margin-left: 22px;"><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">SQL - Beginner to Intermediate</b><br>
+                                  <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Learn the workflow for handling big datasets with BigQuery and SQL, Select, From & Where, Group By, Having & Count, Order By, As & With, Joining Data</p>
+                                </span></div>
+                            </div>
+                          </li>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-xs-1"><img src="assets/imgm/icons/asql.JPG" width="85" height="80" class="rounded img-fluid float-left" alt="..."></div>
+                              <div class="col-xs-11" style="margin-left: 22px;"><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Advanced SQL</b><br>
+                                  <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">JOINs and UNIONs, Analytic Functions, Nested and Repeated Data (Learn to query complex datatypes in BigQuery), Writing Efficient Queries (Write queries to run faster and use less data)</p>
+                                </span></div>
+                            </div>
+                          </li>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-xs-1"><img src="assets/imgm/icons/nlp.JPG" width="85" height="80" class="rounded img-fluid float-left" alt="..."></div>
+                              <div class="col-xs-11" style="margin-left: 22px;"><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Natural Language Processing - Beginner</b><br>
+                                  <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Intro to NLP, Extracting Data (from Twitter feeds, PDF files, JSON files and Web Scraping), Processing Text Data (Lowercasing, Punctuation removal and Stop words removal, Text standardization, Spelling correction and Tokenization), Stemming and Lemmatization, Converting
+                                    Text to Features (Count vectorizer and TF-IDF), solving lots of simple case studies.</p>
+                                </span></div>
+                            </div>
+                          </li>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-xs-1"><img src="assets/imgm/icons/nlppy.jpg" width="85" height="80" class="rounded img-fluid float-left" alt="..."></div>
+                              <div class="col-xs-11" style="margin-left: 22px;"><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Natural Language Processing - Intermediate </b><br>
+                                  <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Noun Phrase extraction & Text similarity, POS tagging & NER (Named Entity Recognition), Extracting Topic from text, Text classification & Sentiment analysis, Word sense disambiguation, Speech recognition and speech to text, Text to speech, Language detection and translation, Consumer complaint classification, Summarizing Text Data, NLP in a Search Engine.</p>
+                                </span></div>
+                            </div>
+                          </li>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-xs-1"><img src="assets/imgm/icons/deepl.JPG" width="85" height="80" class="rounded img-fluid float-left" alt="..."></div>
+                              <div class="col-xs-11" style="margin-left: 22px;"><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Deep Learning for NLP & Text based applications</b><br>
+                                  <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Intro to Deep learning, Types of Neural Networks, Stochastic Gradient Descent and Back-Propagation, TensorFlow programming using Keras, Information retrieval using deep learning, Text classification using RNN and LSTM, Transfer Learning, Data Augmentation, Importance of Dropout and Strides for Larger Models </p>
+                                </span></div>
+                            </div>
+                          </li>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-xs-1"><img src="assets/imgm/icons/deepl (1).jpg" width="85" height="80" class="rounded img-fluid float-left" alt="..."></div>
+                              <div class="col-xs-11" style="margin-left: 22px;"><span style="margin-left:4%;display:inline;"><b style="margin-left:-10%;margin-top:9px;font-size:16px;">Deep Learning for Image Processing</b><br>
+                                  <p style="margin-left:-5%;font-size:11px;margin-top:2px;margin-right:5px;color:gray;">Intro to DL for Computer Vision, Types of Neural Networks, Building models from Convolutions, TensorFlow programming using keras, Stochastic Gradient Descent and Back-Propagation, Transfer Learning, Data Augmentation, Importance of Dropout and Strides for Larger Models, Solving Medical Imaging case studies </p>
+                                </span></div>
+                            </div>
+                          </li>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-sm-3">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Post Content -->
+          <!-- Begin Tags -->
+          <div class="after-post-tags">
+            <ul class="tags">
+            </ul>
+          </div>
+          <!-- End Tags -->
+        </div>
+        <!-- End Post -->
+      </div>
+      <!--for mobile ends-->
+      <div class="container hidden-lg hidden-md" style="padding-right:38px;">
+        <div class="row">
+          <!-- Begin Post -->
+          <div class="col-md-8 col-md-offset-2 col-xs-12" style="width:100%;font-size: 13px;">
+            <div class="mainheading">
+              <br>
+              <h1 class="posttitle"> </h1><br><br><br><br>
+            </div>
+            <!-- Begin Post Content -->
+            <div class="article-post">
+            </div>
+            <!-- End Post Content -->
+            <!-- Begin Tags -->
+            <div class="after-post-tags">
+              <ul class="tags">
+                <!--<li><a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">Machine Learning</a></li>-->
+                <!--<li><a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">Deep Learning</a></li>-->
+                <!--<li><a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">Data Science</a></li>-->
+                <!--<li><a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">Interviews</a></li>-->
+                <!--<li><a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScPpX9SPBQkjj5xklDta_EOO0mADa-st3Zw8941ThkS5woKCQ/viewform" target="_blank">Suven Consultants</a></li>-->
+              </ul>
+            </div>
+            <!-- End Tags -->
+            <br><br>
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding: 50px;">
+                <h3 class="text-success text-center" style="margin-left: 37px;"><span style="font-weight:bolder;margin-left:15px;">Data Science</span><br>&nbsp;&nbsp;team at <span style="font-weight:bolder;">Suven</span></h3><br><br>
+                <div class="row">
+                  <span class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <img src="https://datascience.suvenconsultants.com/images/testimonials/1per.jpg" class="img-circle fiximg" alt="" width=80 height=80 style="margin-rignt:0px;">
+                  </span>
+                  <div class="row">
+                    <span class="text-justify text-primary col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-size:11px;">
+                      <b class="text-info applypads" style="font-weight: bolder;font-size:1.2rem;">Rocky Jagtiani</b> Technology trainer to companies like Accenture , Morgan Stanley, EY. Have trained more than 18000 candidates in 0-3 years work-ex category. Having 18+ of years of training experience. Would be teaching most of the subjects under data science domain. Specializes in Python , ML and NLP.<br><br><br><br>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding: 50px;">
+                <div class="row">
+                  <span class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <img src="https://datascience.suvenconsultants.com/images/testimonials/2per.jpg" class="img-circle fiximg" alt="" width=80 height=80 style="margin-rignt:0px;">
+                  </span>
+                  <div class="row">
+                    <span class="text-justify text-primary col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-size:11px;">
+                      <b class="text-info applypads" style="font-weight: bolder;font-size:1.2rem;">Niraj Sharma</b> Presently Data Analyst at NeoSoft (CMM level 5). An expert in R programming. An active contributor at Kaggle Data Analytics using R competitions. Having 3+ years of training experience. Would be teaching Statistics and Data Analytics using R in this course.<br><br><br><br>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding: 50px;">
+                <div class="row">
+                  <span class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <img src="https://datascience.suvenconsultants.com/elearning/assets/imgm/pankajsharma.JPG" class="img-circle fiximg" alt="" width=80 height=80 style="margin-rignt:0px;">
+                  </span>
+                  <div class="row">
+                    <span class="text-justify text-primary col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-size:11px;">
+                      <b class="text-info applypads" style="font-weight: bolder;font-size:1.2rem;">Pankaj Sharma</b> Pankaj Sharma is presently Senior Software Engineer at Mphasis. Had worked for 6.5 years as a consultant at Capgemini India & UK both. An active contributor at Kaggle ML-NLP-OpenCV competitions. Having ranked with in 500 in most competitions.<br><br><br><br>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding: 50px;">
+                <div class="row">
+                  <span class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <img src="./assets/imgm/kranjekar.jpg" class="img-circle fiximg" alt="" width=80 height=80 style="margin-rignt:0px;">
+                  </span>
+                  <div class="row">
+                    <span class="text-justify text-primary col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-size:11px;">
+                      <b class="text-info applypads" style="font-weight: bolder;font-size:1.2rem;">Hoshang Karanjekar</b> is MTech in Computer Science specializing in AI domain. He works for Viacom18 Media Pvt Ltd. Has a total experience of 4+ years. A problem solver on kaggle. Specializes in FLASK, AWS and deploying ML models on the cloud.<br><br><br><br>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding: 50px;">
+                <div class="row">
+                  <span class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <img src="https://datascience.suvenconsultants.com/images/testimonials/4per.jpg" class="img-circle fiximg" alt="" width=80 height=80 style="margin-rignt:0px;">
+                  </span>
+                  <div class="row">
+                    <span class="text-justify text-primary col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-size:11px;">
+                      <b class="text-info applypads" style="font-weight: bolder;font-size:1.2rem;">Simran Jagtiani</b> Presently Head of HR & Operations , awarded as Women Entrepreneur of the year in 2011. Having mentored more than 5000 participants in the 0-3 years WorkEx category and having successfully placed all of them as IT professional.<br><br>
+                    </span>
+                  </div><br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/jsm/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="assets/jsm/bootstrap.min.js"></script>
+    <script src="assets/jsm/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/jsm/mediumish.js"></script>
+  </body>
+
+</html>
